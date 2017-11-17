@@ -1,0 +1,5 @@
+local mine = http.get("<insert link to updated lua script>") 
+local h = fs.open('mine.lua','w')
+h.write(mine.readAll())
+h.close()
+mine.close()
